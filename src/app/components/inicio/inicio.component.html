@@ -1,0 +1,96 @@
+<div class="row">
+  <div class="col-lg-4 offset-lg-4">
+    <h2 class="titulo">BMI CALCULATOR</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <div
+          class="fondoItem"
+          [ngClass]="{ 'sexoDesactivo': sexo === 'Femenino'}"
+        >
+          <div
+            class="contenedor"
+            style="cursor: pointer;"
+            (click)="masculino()"
+          >
+            <i class="fas fa-mars sexo"></i>
+            <p>Masculino</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div
+          class="fondoItem"
+          [ngClass]="{ 'sexoDesactivo': sexo === 'Masculino'}"
+        >
+          <div
+            class="contenedor"
+            style="cursor: pointer;"
+            (click)="femenino()"
+          >
+            <i class="fas fa-venus sexo"></i>
+            <p>Femenino</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="fondoItem">
+          <div class="contenedor">
+            <p>Altura</p>
+            <div class="estilo-numero">
+              {{ altura }}
+              <span class="cm">cm</span>
+            </div>
+            <input
+              (input)="cambiarAltura($event)"
+              type="range"
+              [value]="altura"
+              min="120"
+              max="225"
+              class="form-range">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="fondoItem">
+          <div class="contenedor">
+            <p>Peso</p>
+            <div class="estilo-numero">
+              {{ peso }}
+            </div>
+            <div>
+              <i class="fas fa-minus sumaResta" (click)="peso = peso - 1"></i>
+              <i class="fas fa-plus sumaResta" (click)="peso = peso + 1"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="fondoItem">
+          <div class="contenedor">
+            <p>Edad</p>
+            <div class="estilo-numero">
+              {{ edad }}
+            </div>
+            <div>
+              <i class="fas fa-minus sumaResta" (click)="edad = edad - 1"></i>
+              <i class="fas fa-plus sumaResta" (click)="edad = edad + 1"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <button
+          (click)="calcularBMI()"
+          class="btn btn-lg btn-primary btn-block btn-color">
+          CALCULAR
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

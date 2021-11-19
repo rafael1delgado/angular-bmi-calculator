@@ -1,0 +1,42 @@
+.fondoItem {
+  background-color: #ff111328;
+  border-radius: 20px;
+  height: 130px;
+  color: white;
+}
+
+.sexo {
+  font-size: 40px;
+}
+
+.estilo-numero {
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: -30px;
+}
+
+.cm {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: -8px;
+}
+
+.form-range {
+  padding: 0px 20px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background-color: #ff3366;
+}
+
+.sumaResta {
+  cursor: pointer;
+  background-color: #ff4c4f5e;
+  padding: 7px;
+  border-radius: 15px;
+  margin-left: 3px;
+}
+
+.sexoDesactivo {
+  background-color: #7d2f2f33;
+}
