@@ -1,4 +1,4 @@
-# Angular Bmi Calculator
+# Angular BMI Calculator
 
 Calculador de Indice de Masa Corporal (BMI) implementado en Angular. 
 
