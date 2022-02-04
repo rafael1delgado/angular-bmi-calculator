@@ -1,6 +1,6 @@
 # Angular BMI Calculator
 
-Calculador de Indice de Masa Corporal (BMI) implementado en Angular. 
+App con Calculadora del Indice de Masa Corporal (BMI) usando Angular. 
 
 ## Development server
 
